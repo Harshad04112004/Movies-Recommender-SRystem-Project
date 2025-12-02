@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Recommendations</title>
+
+    <style>
+        body {
+            font-family: "Poppins", sans-serif;
+            background: #1e1e2f;
+            color: white;
+            text-align: center;
+        }
+
+        .movie-card {
+            display: inline-block;
+            width: 200px;
+            margin: 20px;
+            background: rgba(255,255,255,0.1);
+            border-radius: 12px;
+            padding: 10px;
+        }
+
+        img {
+            width: 100%;
+            border-radius: 10px;
+        }
+
+        a {
+            display: block;
+            margin-top: 20px;
+            text-decoration: none;
+            color: #ff4d4d;
+            font-size: 20px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>🎬 Top Recommendations for: {{ movie }}</h1>
+
+    {% for r in recommendations %}
+    <div class="movie-card">
+        <img src="{{ r.poster }}" alt="Poster">
+        <h3>{{ r.title }}</h3>
+    </div>
+    {% endfor %}
+
+    <a href="/">⬅ Back</a>
+
+</body>
+</html>

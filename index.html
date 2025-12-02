@@ -1,10 +1,89 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Movie Recommender System</title>
+    <title>Movie Recommender</title>
+      <style>
+       
+body {
+            margin: 0;
+            padding: 0;
+            font-family: "Poppins", sans-serif;
+            background: linear-gradient(to right, #141E30, #243B55);
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #fff;
+        }
+
+        .container {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            padding: 40px;
+            width: 350px;
+            border-radius: 15px;
+            text-align: center;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+            animation: fadeIn 1s ease-in-out;
+        }
+
+        h1 {
+            margin-bottom: 25px;
+            font-size: 28px;
+            letter-spacing: 1px;
+            color: #fff;
+        }
+
+        input[type="text"] {
+            width: 100%;
+            padding: 12px;
+            border-radius: 6px;
+            background: rgba(255,255,255,0.2);
+            border: none;
+            outline: none;
+            color: #fff;
+            margin-bottom: 20px;
+            font-size: 16px;
+        }
+
+        input::placeholder {
+            color: #ddd;
+        }
+
+        button {
+            width: 100%;
+            padding: 12px;
+            font-size: 16px;
+            background: #00c6ff;
+            background: linear-gradient(to right, #0072ff, #00c6ff);
+            border: none;
+            color: #fff;
+            font-weight: bold;
+            border-radius: 6px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        button:hover {
+            transform: scale(1.05);
+            box-shadow: 0 6px 15px rgba(0, 198, 255, 0.4);
+        }
+
+        @keyframes fadeIn {
+            0% { opacity: 0; transform: translateY(-10px); }
+            100% { opacity: 1; transform: translateY(0); }
+        }
+      </style>
 </head>
 <body>
-    <h1>Movie Recommender System</h1>
+    <div class="container">
+    <h1>Movie Recommender System</h1> <br>
+
+    <form action="/recommend" method="POST">
+        <input type="text" name="movie" placeholder="Enter movie name" required>
+        <button type="submit">Recommend</button>
+    </form>
+    </div>
+    
 </body>
 </html>
-
