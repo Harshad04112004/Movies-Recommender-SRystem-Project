@@ -1,0 +1,20 @@
+Recommender SRystem Project  :-
+A Recommender System Project is a Machine Learning project that suggests personalized items to users based on their interests, behavior, or item similarities. It is widely used in real-world applications such as Netflix, Amazon, Spotify, YouTube, and Instagram.
+
+Type of Recommender System  :-
+1. Content Based :- same content ,tage base 
+2. Couaborative filtering  :- user base same content
+3. Hybrid :- 
+
+Project Flow :-
+
+1.Data 
+2.Preproceeing
+3.Model Billing
+4.Convert website 
+5.Deployment  
+
+Code Idea
+movie_id , name , tags
+5000 -> movies
+tags Content in vectord
